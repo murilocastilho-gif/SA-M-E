@@ -1,0 +1,15 @@
+body.bg {
+    background: linear-gradient(135deg, #0D1B2A, #1B263B);
+    color: white;
+    font-family: Arial;
+}
+
+.box {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.card {
+    background: #ffffff;
+    color: black;
+}
