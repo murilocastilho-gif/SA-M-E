@@ -1,14 +1,169 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela Principal</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ferrorama - Central de Peças e Coleções</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style/style.css">
 </head>
 <body>
-    <main>
-        
-    </main>
-    
+
+    <nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
+        <div class="container d-flex flex-column">
+            <div class="d-flex w-100 align-items-center justify-content-between mb-2">
+                <a class="navbar-brand fw-bold text-white fs-3" href="../index.html">
+                    <span style="color: var(--laranja-ferrorama);">FERRO</span>RAMA
+                </a>
+
+                <div class="d-flex flex-grow-1 mx-4">
+                    <input type="text" class="search-bar" placeholder="Buscar locomotivas, trilhos, vagões...">
+                    <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+                <div class="text-white d-none d-md-block">
+                    <a href="tela-login.html" class="nav-link-custom d-inline"><i class="fa-regular fa-user me-1"></i> Entrar</a>
+                    <a href="#" class="nav-link-custom d-inline position-relative">
+                        <i class="fa-solid fa-train"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-100">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#">Categorias</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#">Locomotivas</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#">Trilhos e Curvas</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#">Ofertas do Dia</a></li>
+                    <li class="nav-item"><a class="nav-link nav-link-custom" href="#">Vender Peças</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="hero-banner">
+            <div>
+                <h1 class="display-4 fw-bold">Expedição Natal 2026</h1>
+                <p class="fs-5">Complete sua coleção com sets exclusivos de locomotivas a vapor.</p>
+                <button class="btn btn-warning btn-lg fw-bold">Ver Ofertas</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col">
+                <div class="cat-card"><i class="fa-solid fa-train"></i></div>
+                <p class="small fw-bold">Motores</p>
+            </div>
+            <div class="col">
+                <div class="cat-card"><i class="fa-solid fa-road"></i></div>
+                <p class="small fw-bold">Trilhos</p>
+            </div>
+            <div class="col">
+                <div class="cat-card"><i class="fa-solid fa-box-open"></i></div>
+                <p class="small fw-bold">Sets Completos</p>
+            </div>
+            <div class="col">
+                <div class="cat-card"><i class="fa-solid fa-gears"></i></div>
+                <p class="small fw-bold">Peças Reposição</p>
+            </div>
+            <div class="col">
+                <div class="cat-card"><i class="fa-solid fa-mountain-sun"></i></div>
+                <p class="small fw-bold">Cenários</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h3 class="mb-4 fw-bold">Inspirado no seu histórico</h3>
+        <div class="row g-4">
+            
+            <div class="col-md-3">
+                <div class="card product-card shadow-sm">
+                    <div class="product-img">
+                        <i class="fa-solid fa-train-subway fa-4x text-secondary"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-1 text-muted small">Novo | +50 vendidos</p>
+                        <h6 class="card-title mb-2">Locomotiva XP-300 Clássica Estrela</h6>
+                        <div class="price-tag">R$ 450,00</div>
+                        <p class="shipping-free">Frete grátis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card product-card shadow-sm">
+                    <div class="product-img">
+                        <i class="fa-solid fa-train-tram fa-4x text-secondary"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-1 text-muted small">Usado</p>
+                        <h6 class="card-title mb-2">Vagão de Carga Petrobras - Original</h6>
+                        <div class="price-tag">R$ 89,90</div>
+                        <p class="text-muted small">12x R$ 8,70 sem juros</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card product-card shadow-sm">
+                    <div class="product-img">
+                        <i class="fa-solid fa-bridge fa-4x text-secondary"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-1 text-muted small">Novo</p>
+                        <h6 class="card-title mb-2">Kit Expansão: Ponte Metálica Elevada</h6>
+                        <div class="price-tag">R$ 120,00</div>
+                        <p class="shipping-free">Frete grátis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card product-card shadow-sm">
+                    <div class="product-img">
+                        <i class="fa-solid fa-shuffle fa-4x text-secondary"></i>
+                    </div>
+                    <div class="card-body">
+                        <p class="mb-1 text-muted small">Novo</p>
+                        <h6 class="card-title mb-2">Cruzamento de Trilhos em X - 4 unidades</h6>
+                        <div class="price-tag">R$ 55,00</div>
+                        <p class="text-muted small">Envio para todo o país</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row">
+                <div class="col-md-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Ferrorama</h5>
+                    <p class="small text-secondary">A maior comunidade de colecionadores de trens elétricos do Brasil. O destino final para sua nostalgia.</p>
+                </div>
+                <div class="col-md-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Links</h5>
+                    <p><a href="#" class="text-white text-decoration-none small">Minha Conta</a></p>
+                    <p><a href="#" class="text-white text-decoration-none small">Meus Pedidos</a></p>
+                </div>
+                <div class="col-md-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contato</h5>
+                    <p class="small"><i class="fas fa-home me-2"></i> Estação Central, SC</p>
+                    <p class="small"><i class="fas fa-envelope me-2"></i> suporte@ferrorama.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script/scripts.js"></script>
 </body>
 </html>

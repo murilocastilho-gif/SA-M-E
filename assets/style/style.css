@@ -1,15 +1,120 @@
-body.bg {
-    background: linear-gradient(135deg, #0D1B2A, #1B263B);
+:root {
+    --azul-industrial: #0f172a;
+    --azul-card: #1e293b;
+    --laranja-ferrorama: #f97316;
+    --cinza-texto: #94a3b8;
+    --branco-neve: #f8fafc;
+}
+
+body {
+    font-family: 'Urbanist', sans-serif;
+    background-color: #f1f5f9;
+    color: var(--azul-industrial);
+}
+
+
+.navbar-custom {
+    background-color: var(--azul-industrial);
+    padding: 10px 0;
+}
+
+.search-bar {
+    border-radius: 4px;
+    border: none;
+    padding: 8px 15px;
+    width: 100%;
+}
+
+.btn-search {
+    background-color: var(--laranja-ferrorama);
     color: white;
-    font-family: Arial;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 0 4px 4px 0;
+    margin-left: -5px;
 }
 
-.box {
-    width: 300px;
-    border-radius: 10px;
+.btn-search:hover {
+    background-color: #ea580c;
 }
 
-.card {
-    background: #ffffff;
-    color: black;
+.nav-link-custom {
+    color: var(--branco-neve) !important;
+    font-size: 0.9rem;
+    margin-right: 15px;
+}
+
+.nav-link-custom:hover {
+    color: var(--laranja-ferrorama) !important;
+}
+
+
+.hero-banner {
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), 
+                url('https://images.unsplash.com/photo-1535961652354-923cb08225a7?auto=format&fit=crop&q=80&w=1200');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+
+.cat-card {
+    background: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    color: var(--laranja-ferrorama);
+    font-size: 1.5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cat-card:hover {
+    background: var(--laranja-ferrorama);
+    color: white;
+    transform: translateY(-5px);
+}
+
+
+.product-card {
+    border: none;
+    border-radius: 12px;
+    transition: 0.3s;
+    overflow: hidden;
+    background: white;
+}
+
+.product-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.product-img {
+    height: 200px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-tag {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.shipping-free {
+    color: #00a650;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
